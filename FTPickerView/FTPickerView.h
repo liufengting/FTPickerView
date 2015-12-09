@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-#define PickerHeight 216
 
 typedef void (^ FTPickerDoneBlock )(NSInteger);
 typedef void (^ FTPickerCancelBlock )();
+typedef void (^ FTDatePickerDoneBlock )(NSDate *);
+typedef void (^ FTDatePickerCancelBlock )();
 
-#pragma mark - FTPickerTitleView
+/**
+ *  FTPickerTitleView
+ */
 
 @interface FTPickerTitleView : UIView
 
@@ -21,15 +24,66 @@ typedef void (^ FTPickerCancelBlock )();
 
 @end
 
-#pragma mark - FTPickerView
+/**
+ *  FTPickerView
+ */
 
 @interface FTPickerView : NSObject <UIPickerViewDataSource,UIPickerViewDelegate>
-
-@property (nonatomic,strong)FTPickerDoneBlock doneBlock;
-@property (nonatomic,strong)FTPickerCancelBlock cancelBlock;
-
+/**
+ *  singlone
+ *
+ *  @return sharedInstance
+ */
 + (FTPickerView *)sharedInstance;
+/**
+ *  show method
+ *
+ *  @param title       title
+ *  @param nameArray   nameArray
+ *  @param doneBlock   FTPickerDoneBlock
+ *  @param cancelBlock FTPickerCancelBlock
+ */
+-(void)showWithTitle:(NSString *)title
+           nameArray:(NSArray *)nameArray
+          doneBlock :(FTPickerDoneBlock)doneBlock
+         cancelBlock:(FTPickerCancelBlock)cancelBlock;
 
--(void)showWithTitle:(NSString *)title nameArray:(NSArray *)nameArray  doneBlock :(FTPickerDoneBlock)doneBlock cancelBlock:(FTPickerCancelBlock)cancelBlock;
+@end
+
+/**
+ *  FTDatePickerView
+ */
+
+@interface FTDatePickerView : UIView
+/**
+ *  singlone
+ *
+ *  @return sharedInstance
+ */
++ (FTDatePickerView *)sharedInstance;
+/**
+ *  show method
+ *
+ *  @param title       title
+ *  @param doneBlock   FTDatePickerDoneBlock
+ *  @param cancelBlock FTDatePickerCancelBlock
+ */
+-(void)showWithTitle:(NSString *)title
+          doneBlock :(FTDatePickerDoneBlock)doneBlock
+         cancelBlock:(FTDatePickerCancelBlock)cancelBlock;
+/**
+ *  show method
+ *
+ *  @param title          title
+ *  @param selectDate     selectDate
+ *  @param datePickerMode datePickerMode
+ *  @param doneBlock      FTDatePickerDoneBlock
+ *  @param cancelBlock    FTDatePickerCancelBlock
+ */
+-(void)showWithTitle:(NSString *)title
+          selectDate:(NSDate *)selectDate
+      datePickerMode:(UIDatePickerMode )datePickerMode
+          doneBlock :(FTDatePickerDoneBlock)doneBlock
+         cancelBlock:(FTDatePickerCancelBlock)cancelBlock;
 
 @end

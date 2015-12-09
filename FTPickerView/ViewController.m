@@ -25,6 +25,7 @@
 }
 
 - (IBAction)chooseOne:(UIButton *)sender {
+    //simple picker
     [[FTPickerView sharedInstance] showWithTitle:@"安装Alcatraz"
                                        nameArray:_optionArrayOne
                                        doneBlock:^(NSInteger selectedIndex) {
@@ -35,13 +36,17 @@
     
 }
 - (IBAction)chooseTwo:(UIButton *)sender {
-    [[FTPickerView sharedInstance] showWithTitle:@"Alcatraz的issues"
-                                       nameArray:_optionArrayTwo
-                                       doneBlock:^(NSInteger selectedIndex) {
-                                           [sender setTitle:_optionArrayTwo[selectedIndex] forState:UIControlStateNormal];
-                                       } cancelBlock:^{
-                                           [sender setTitle:@"Alcatraz的issues" forState:UIControlStateNormal];
-                                       }];
+    //date picker
+    [[FTDatePickerView sharedInstance] showWithTitle:@"选择日期"
+                                          selectDate:[NSDate date]
+                                      datePickerMode:UIDatePickerModeDateAndTime
+                                           doneBlock:^(NSDate *selectedDate) {
+                                               NSDateFormatter *f = [[NSDateFormatter alloc]init];
+                                               [f setDateFormat:@"yyyy年MM月dd日 HH:mm:ss"];
+                                               [sender setTitle:[f stringFromDate:selectedDate] forState:UIControlStateNormal];
+                                           } cancelBlock:^{
+                                               
+                                           }];
 }
 
 @end

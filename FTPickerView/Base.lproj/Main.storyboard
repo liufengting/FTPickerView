@@ -20,7 +20,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNe-da-YMT">
                                 <rect key="frame" x="20" y="190" width="335" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button one"/>
+                                <state key="normal" title="simple picker"/>
                                 <connections>
                                     <action selector="chooseOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8MB-8i-LTL"/>
                                 </connections>
@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3n-hm-1kp">
                                 <rect key="frame" x="20" y="260" width="335" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button two"/>
+                                <state key="normal" title="date picker"/>
                                 <connections>
                                     <action selector="chooseTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMd-ZY-4Y9"/>
                                 </connections>
