@@ -5,7 +5,7 @@ FTPickerView
 - singleton
 - fit every device
 
-## Useage
+## Simple Picker Useage
 
 ```objective-c
 //simple picker
@@ -17,6 +17,8 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
                                        } cancelBlock:^{
 
                                        }];
+``
+## Date Picker Useage
 
 ```objective-c
 //date picker
@@ -30,3 +32,4 @@ NSDateFormatter *f = [[NSDateFormatter alloc]init];
 } cancelBlock:^{
 
 }];
+``
