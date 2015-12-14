@@ -17,7 +17,8 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
                                        } cancelBlock:^{
 
                                        }];
-``
+```
+
 ## Date Picker Useage
 
 ```objective-c
@@ -32,4 +33,4 @@ NSDateFormatter *f = [[NSDateFormatter alloc]init];
 } cancelBlock:^{
 
 }];
-``
+```
