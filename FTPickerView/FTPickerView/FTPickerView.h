@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 typedef void (^ FTPickerDoneBlock )(NSInteger);
 typedef void (^ FTPickerCancelBlock )();
 typedef void (^ FTDatePickerDoneBlock )(NSDate *);

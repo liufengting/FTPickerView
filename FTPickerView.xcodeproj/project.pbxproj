@@ -15,7 +15,7 @@
 		5A0FF4121C10191A00D584D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FF4101C10191A00D584D3 /* LaunchScreen.storyboard */; };
 		5A0FF41D1C10191A00D584D3 /* FTPickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FF41C1C10191A00D584D3 /* FTPickerViewTests.m */; };
 		5A0FF4281C10191A00D584D3 /* FTPickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FF4271C10191A00D584D3 /* FTPickerViewUITests.m */; };
-		5A0FF43A1C10195100D584D3 /* FTPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FF4391C10195100D584D3 /* FTPickerView.m */; };
+		5AA10B751C214B4B001D19AE /* FTPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA10B741C214B4B001D19AE /* FTPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		5A0FF4231C10191A00D584D3 /* FTPickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTPickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0FF4271C10191A00D584D3 /* FTPickerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTPickerViewUITests.m; sourceTree = "<group>"; };
 		5A0FF4291C10191A00D584D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A0FF4381C10195100D584D3 /* FTPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPickerView.h; sourceTree = "<group>"; };
-		5A0FF4391C10195100D584D3 /* FTPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPickerView.m; sourceTree = "<group>"; };
+		5AA10B731C214B4B001D19AE /* FTPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPickerView.h; sourceTree = "<group>"; };
+		5AA10B741C214B4B001D19AE /* FTPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,7 @@
 				5A0FF4061C10191A00D584D3 /* AppDelegate.m */,
 				5A0FF4081C10191A00D584D3 /* ViewController.h */,
 				5A0FF4091C10191A00D584D3 /* ViewController.m */,
-				5A0FF4381C10195100D584D3 /* FTPickerView.h */,
-				5A0FF4391C10195100D584D3 /* FTPickerView.m */,
+				5AA10B721C214B4B001D19AE /* FTPickerView */,
 				5A0FF40B1C10191A00D584D3 /* Main.storyboard */,
 				5A0FF40E1C10191A00D584D3 /* Assets.xcassets */,
 				5A0FF4101C10191A00D584D3 /* LaunchScreen.storyboard */,
@@ -143,6 +142,15 @@
 				5A0FF4291C10191A00D584D3 /* Info.plist */,
 			);
 			path = FTPickerViewUITests;
+			sourceTree = "<group>";
+		};
+		5AA10B721C214B4B001D19AE /* FTPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				5AA10B731C214B4B001D19AE /* FTPickerView.h */,
+				5AA10B741C214B4B001D19AE /* FTPickerView.m */,
+			);
+			path = FTPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0FF43A1C10195100D584D3 /* FTPickerView.m in Sources */,
+				5AA10B751C214B4B001D19AE /* FTPickerView.m in Sources */,
 				5A0FF40A1C10191A00D584D3 /* ViewController.m in Sources */,
 				5A0FF4071C10191A00D584D3 /* AppDelegate.m in Sources */,
 				5A0FF4041C10191A00D584D3 /* main.m in Sources */,
@@ -502,6 +510,7 @@
 				5A0FF42E1C10191A00D584D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A0FF42F1C10191A00D584D3 /* Build configuration list for PBXNativeTarget "FTPickerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +519,7 @@
 				5A0FF4311C10191A00D584D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A0FF4321C10191A00D584D3 /* Build configuration list for PBXNativeTarget "FTPickerViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +528,7 @@
 				5A0FF4341C10191A00D584D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
