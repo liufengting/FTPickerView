@@ -11,6 +11,7 @@
 #define KSCREEN_WIDTH            [[UIScreen mainScreen] bounds].size.width
 #define KSCREEN_HEIGHT           [[UIScreen mainScreen] bounds].size.height
 #define PickerHeight             216
+#define BackgroundColor          [[UIColor blackColor] colorWithAlphaComponent:0.2]
 
 #pragma mark -
 #pragma mark - FTPickerTitleView
@@ -165,7 +166,7 @@
                      completion:^(BOOL finished) {
                          [UIView animateWithDuration:0.1
                                           animations:^{
-                                              _backgroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+                                              _backgroundView.backgroundColor = BackgroundColor;
                                           }];
                      }];
 }
@@ -333,7 +334,7 @@
                      completion:^(BOOL finished) {
                          [UIView animateWithDuration:0.1
                                           animations:^{
-                                              _backgroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
+                                              _backgroundView.backgroundColor = BackgroundColor;
                                           }];
                      }];
 }
