@@ -8,7 +8,7 @@ A simple UIPickerView/UIDatePicker wapper. Easy to use.
 - singleton
 - block callbacks
 
-## Simple Picker 
+# Simple Picker 
 
 ![FTPickerView Simple Picker](https://github.com/liufengting/FTPickerView/blob/master/ImageAssets/SimplePicker.png)
 
@@ -27,7 +27,7 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
                                     }];
 ```
 
-## Date Picker 
+# Date Picker 
 
 ![FTPickerView Date Picker](https://github.com/liufengting/FTPickerView/blob/master/ImageAssets/DatePicker.png)
 
@@ -47,3 +47,9 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
 
                                   }];
 ```
+# Installation
+
+Drag 'FTPickerView' file to you project,
+Import 'FTPickerView.h',
+Enjoy！ 🍺
+
