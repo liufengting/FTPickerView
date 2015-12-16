@@ -1,19 +1,24 @@
 # FTPickerView
 FTPickerView
 
-A simple PickerView Class. Easy to use.
+A simple UIPickerView/UIDatePicker wapper. Easy to use.
 
 
 ## Features
 - singleton
 - block callbacks
 
-## Simple Picker Useage
+## Simple Picker 
+
+![FTPickerView Simple Picker](https://github.com/liufengting/FTPickerView/blob/master/ImageAssets/SimplePicker.png)
+
+## Useage
 
 ```objective-c
+
 //simple picker
 NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
- [[FTPickerView sharedInstance] showWithTitle:@"i am title"
+[[FTPickerView sharedInstance]  showWithTitle:@"i am title"
                                     nameArray:nameArray
                                     doneBlock:^(NSInteger selectedIndex) {
                                        		NSLog(@"the selected string is: %@",nameArray[selectedIndex]);
@@ -22,9 +27,14 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
                                     }];
 ```
 
-## Date Picker Useage
+## Date Picker 
+
+![FTPickerView Date Picker](https://github.com/liufengting/FTPickerView/blob/master/ImageAssets/DatePicker.png)
+
+## Useage
 
 ```objective-c
+
 //date picker
 [[FTDatePickerView sharedInstance] showWithTitle:@"选择日期"
                                       selectDate:[NSDate date]
