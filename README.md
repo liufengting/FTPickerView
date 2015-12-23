@@ -53,3 +53,4 @@ Drag 'FTPickerView' file to you project,
 Import 'FTPickerView.h',
 Enjoy！ 🍺
 
+ViewDetial : http://liufengting.github.io/FTPickerView
