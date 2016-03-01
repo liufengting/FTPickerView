@@ -10,7 +10,8 @@ A simple UIPickerView/UIDatePicker wapper. Easy to use.
 
 # Simple Picker 
 
-![FTPickerView Simple Picker](https://github.com/liufengting/FTPickerView/blob/master/ImageAssets/SimplePicker.png)
+![FTPickerView Simple Picker](/ImageAssets/SimplePicker.png)
+
 
 ## Useage
 
@@ -23,13 +24,12 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
                                     doneBlock:^(NSInteger selectedIndex) {
                                        		NSLog(@"the selected string is: %@",nameArray[selectedIndex]);
                                     } cancelBlock:^{
-
                                     }];
 ```
 
 # Date Picker 
 
-![FTPickerView Date Picker](https://github.com/liufengting/FTPickerView/blob/master/ImageAssets/DatePicker.png)
+![FTPickerView Simple Picker](/ImageAssets/DatePicker.png)
 
 ## Useage
 
@@ -44,7 +44,6 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
                                             [f setDateFormat:@"yyyy年MM月dd日 HH:mm:ss"];
                                             NSLog(@"the selected date is: %@",[f stringFromDate:selectedDate]);
                                   } cancelBlock:^{
-
                                   }];
 ```
 # Installation
