@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
 
   s.name         = "FTPickerView"
   s.version      = "0.0.1"
-  s.summary      = "A short description of FTPickerView."
+  s.summary      = "A simple UIPickerView/UIDatePicker wapper. Easy to use."
   s.description  = <<-DESC
-      A short description of FTPickerView. Feel free to use it.
+      A simple UIPickerView/UIDatePicker wapper. Easy to use. Feel free to use it.
                    DESC
   s.homepage     = "https://github.com/liufengting/FTPickerView"
-  s.license      = "MIT"
+  #s.license      = ""
   s.author             = { "liufengting" => "wo157121900@me.com" }
   s.social_media_url   = "http://twitter.com/liufengting"
   s.platform     = :ios
