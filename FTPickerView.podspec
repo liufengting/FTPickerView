@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/liufengting"
   s.platform     = :ios
   s.source       = { :git => "https://github.com/liufengting/FTPickerView.git", :tag => "0.0.1" }
-  s.source_files  = "FTPickerView/FTPickerView", "FTPickerView/*.{h,m}"
-  s.public_header_files = "FTPickerView/FTPickerView/FTPickerView.h"
+  s.source_files  = "FTPickerView/FTPickerView/FTPickerView", "FTPickerView/*.{h,m}"
+  s.public_header_files = "FTPickerView/FTPickerView/FTPickerView/FTPickerView.h"
   s.requires_arc = true
 
 end
