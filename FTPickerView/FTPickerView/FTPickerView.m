@@ -276,11 +276,7 @@
         
         _datePicker = [[UIDatePicker alloc]initWithFrame:CGRectMake(0, KSCREEN_HEIGHT-PickerHeight, KSCREEN_WIDTH, PickerHeight)];
         _datePicker.backgroundColor = [UIColor whiteColor];
-        if (datePickerMode) {
-            _datePicker.datePickerMode = datePickerMode;
-        }else{
-            _datePicker.datePickerMode = UIDatePickerModeDateAndTime;
-        }
+        _datePicker.datePickerMode = datePickerMode;
         _datePicker.minuteInterval = 5;
         if (selectDate) {
             [_datePicker setDate:selectDate];
@@ -292,11 +288,7 @@
         [self open];
     }else{
         _titleView.titleLabel.text = title;
-        if (datePickerMode) {
-            _datePicker.datePickerMode = datePickerMode;
-        }else{
-            _datePicker.datePickerMode = UIDatePickerModeDateAndTime;
-        }
+        _datePicker.datePickerMode = datePickerMode;
         if (selectDate) {
             [_datePicker setDate:selectDate];
         }else{
