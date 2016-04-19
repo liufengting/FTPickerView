@@ -1,19 +1,32 @@
 # FTPickerView
-FTPickerView
+[![Twitter](https://img.shields.io/badge/twitter-@liufengting-blue.svg?style=flat)](http://twitter.com/liufengting) 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/liufengting/FTPickerView/master/LICENSE)
+[![CI Status](http://img.shields.io/travis/liufengting/FTPickerView.svg?style=flat)](https://travis-ci.org/liufengting/FTPickerView)
+[![GitHub stars](https://img.shields.io/github/stars/liufengting/FTPickerView.svg)](https://github.com/liufengting/FTPickerView/stargazers)
 
-A simple UIPickerView/UIDatePicker wapper. Easy to use.
+
+A simple UIPickerView/UIDatePicker wapper.
+View detial at : http://liufengting.github.io/FTPickerView
 
 
 ## Features
 - singleton
 - block callbacks
 
-# Simple Picker 
 
-![FTPickerView Simple Picker](/ImageAssets/SimplePicker.png)
+## ScreenShots
+
+<table>
+  <tr>
+    <th><img src="/ImageAssets/SimplePicker.png" width="300"/></th>
+    <th><img src="/ImageAssets/DatePicker.png" width="300"/></th>
+  </tr>
+</table>
 
 
 ## Useage
+
+* Simple Picker 
 
 ```objective-c
 
@@ -27,11 +40,8 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
                                     }];
 ```
 
-# Date Picker 
+* Date Picker 
 
-![FTPickerView Simple Picker](/ImageAssets/DatePicker.png)
-
-## Useage
 
 ```objective-c
 
@@ -52,4 +62,12 @@ Drag 'FTPickerView' file to you project,
 Import 'FTPickerView.h',
 Enjoy！ 🍺
 
-ViewDetial : http://liufengting.github.io/FTPickerView
+
+
+## License
+
+FTPickerView is available under the MIT license. See the LICENSE file for more info.
+
+
+
+
