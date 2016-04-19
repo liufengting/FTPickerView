@@ -58,9 +58,9 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
 ```
 # Installation
 
-Drag 'FTPickerView' file to you project,
-Import 'FTPickerView.h',
-Enjoy！ 🍺
+* Drag 'FTPickerView' file to you project,
+* Import 'FTPickerView.h',
+* Enjoy！ 🍺
 
 
 
