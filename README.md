@@ -18,8 +18,8 @@ View detial at : http://liufengting.github.io/FTPickerView
 
 <table>
   <tr>
-    <th><img src="/ImageAssets/SimplePicker.png" width="300"/></th>
-    <th><img src="/ImageAssets/DatePicker.png" width="300"/></th>
+    <th><img src="/ImageAssets/SimplePicker.png" width="250"/></th>
+    <th><img src="/ImageAssets/DatePicker.png" width="250"/></th>
   </tr>
 </table>
 
