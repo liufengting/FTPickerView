@@ -1,6 +1,7 @@
 # FTPickerView
 [![Twitter](https://img.shields.io/badge/twitter-@liufengting-blue.svg?style=flat)](http://twitter.com/liufengting) 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/liufengting/FTPickerView/master/LICENSE)
+[![Version](https://img.shields.io/cocoapods/v/FTPickerView.svg?style=flat)](http://cocoapods.org/pods/FTPickerView)
 [![CI Status](http://img.shields.io/travis/liufengting/FTPickerView.svg?style=flat)](https://travis-ci.org/liufengting/FTPickerView)
 [![GitHub stars](https://img.shields.io/github/stars/liufengting/FTPickerView.svg)](https://github.com/liufengting/FTPickerView/stargazers)
 
@@ -44,7 +45,6 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
 
 
 ```objective-c
-
 //date picker
 [[FTDatePickerView sharedInstance] showWithTitle:@"选择日期"
                                       selectDate:[NSDate date]
@@ -58,11 +58,18 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
 ```
 # Installation
 
+## Manual
 * Drag 'FTPickerView' file to you project,
 * Import 'FTPickerView.h',
 * Enjoy！ 🍺
 
+## Cocoapods
 
+* add the following line to you podFile
+
+```
+   pod 'FTPickerView', '~> 0.1.1'
+```
 
 ## License
 
