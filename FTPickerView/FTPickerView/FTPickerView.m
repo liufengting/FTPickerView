@@ -35,7 +35,7 @@
         _cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _cancelButton.frame = CGRectMake(0, 0, 60, self.bounds.size.height);
         _cancelButton.backgroundColor = [UIColor clearColor];
-        _cancelButton.titleLabel.font = [UIFont systemFontOfSize:15];
+        _cancelButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
         [_cancelButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [self addSubview:_cancelButton];
@@ -44,7 +44,7 @@
         _confirmButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _confirmButton.frame= CGRectMake(self.bounds.size.width - 60, 0, 60, self.bounds.size.height);
         _confirmButton.backgroundColor=[UIColor clearColor];
-        _confirmButton.titleLabel.font = [UIFont systemFontOfSize:15];
+        _confirmButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [_confirmButton setTitle:@"确认" forState:UIControlStateNormal];
         [_confirmButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self addSubview:_confirmButton];
@@ -280,8 +280,6 @@
         _datePicker.minuteInterval = 5;
         if (selectDate) {
             [_datePicker setDate:selectDate];
-        }else{
-            [_datePicker setDate:[NSDate date]];
         }
         [_backgroundView addSubview:_datePicker];
         
@@ -291,8 +289,6 @@
         _datePicker.datePickerMode = datePickerMode;
         if (selectDate) {
             [_datePicker setDate:selectDate];
-        }else{
-            [_datePicker setDate:[NSDate date]];
         }
         [self open];
     }

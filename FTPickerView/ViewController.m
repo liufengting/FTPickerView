@@ -38,7 +38,7 @@
 - (IBAction)chooseTwo:(UIButton *)sender {
     //date picker
     [[FTDatePickerView sharedInstance] showWithTitle:@"选择日期"
-                                          selectDate:[NSDate date]
+                                          selectDate:nil
                                       datePickerMode:UIDatePickerModeDateAndTime
                                            doneBlock:^(NSDate *selectedDate) {
                                                NSDateFormatter *f = [[NSDateFormatter alloc]init];
