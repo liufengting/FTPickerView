@@ -7,8 +7,6 @@
 
 
 A simple UIPickerView/UIDatePicker wapper.
-View detial at : http://liufengting.github.io/FTPickerView
-
 
 ## Features
 - singleton
@@ -65,7 +63,7 @@ NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
 
 ## Cocoapods
 
-* add the following line to you podFile
+* add the following line to you podFile，then `pod update`
 
 ```
    pod 'FTPickerView', '~> 0.1.1'
