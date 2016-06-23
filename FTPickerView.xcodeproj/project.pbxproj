@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A0FF4041C10191A00D584D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FF4031C10191A00D584D3 /* main.m */; };
-		5A0FF4071C10191A00D584D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FF4061C10191A00D584D3 /* AppDelegate.m */; };
-		5A0FF40A1C10191A00D584D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FF4091C10191A00D584D3 /* ViewController.m */; };
-		5A0FF40D1C10191A00D584D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FF40B1C10191A00D584D3 /* Main.storyboard */; };
-		5A0FF40F1C10191A00D584D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FF40E1C10191A00D584D3 /* Assets.xcassets */; };
-		5A0FF4121C10191A00D584D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FF4101C10191A00D584D3 /* LaunchScreen.storyboard */; };
 		5A0FF41D1C10191A00D584D3 /* FTPickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FF41C1C10191A00D584D3 /* FTPickerViewTests.m */; };
 		5A0FF4281C10191A00D584D3 /* FTPickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FF4271C10191A00D584D3 /* FTPickerViewUITests.m */; };
-		5AA10B751C214B4B001D19AE /* FTPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA10B741C214B4B001D19AE /* FTPickerView.m */; };
+		5AECB17D1D1C18FF00CD8CB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AECB1791D1C18FF00CD8CB1 /* AppDelegate.m */; };
+		5AECB17E1D1C18FF00CD8CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AECB17A1D1C18FF00CD8CB1 /* Assets.xcassets */; };
+		5AECB17F1D1C18FF00CD8CB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AECB17C1D1C18FF00CD8CB1 /* ViewController.m */; };
+		5AECB1811D1C191500CD8CB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AECB1801D1C191500CD8CB1 /* main.m */; };
+		5AECB1861D1C193100CD8CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AECB1821D1C193100CD8CB1 /* LaunchScreen.storyboard */; };
+		5AECB1871D1C193100CD8CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AECB1841D1C193100CD8CB1 /* Main.storyboard */; };
+		5AECB18B1D1C196800CD8CB1 /* FTPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AECB18A1D1C196800CD8CB1 /* FTPickerView.m */; };
+		5AECB18D1D1C198600CD8CB1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AECB18C1D1C198600CD8CB1 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,23 +38,23 @@
 
 /* Begin PBXFileReference section */
 		5A0FF3FF1C10191A00D584D3 /* FTPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A0FF4031C10191A00D584D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5A0FF4051C10191A00D584D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5A0FF4061C10191A00D584D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5A0FF4081C10191A00D584D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5A0FF4091C10191A00D584D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5A0FF40C1C10191A00D584D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5A0FF40E1C10191A00D584D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5A0FF4111C10191A00D584D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5A0FF4131C10191A00D584D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A0FF4181C10191A00D584D3 /* FTPickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTPickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0FF41C1C10191A00D584D3 /* FTPickerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTPickerViewTests.m; sourceTree = "<group>"; };
 		5A0FF41E1C10191A00D584D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A0FF4231C10191A00D584D3 /* FTPickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTPickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0FF4271C10191A00D584D3 /* FTPickerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTPickerViewUITests.m; sourceTree = "<group>"; };
 		5A0FF4291C10191A00D584D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AA10B731C214B4B001D19AE /* FTPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPickerView.h; sourceTree = "<group>"; };
-		5AA10B741C214B4B001D19AE /* FTPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPickerView.m; sourceTree = "<group>"; };
+		5AECB1781D1C18FF00CD8CB1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Demo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		5AECB1791D1C18FF00CD8CB1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Demo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		5AECB17A1D1C18FF00CD8CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Demo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		5AECB17B1D1C18FF00CD8CB1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Demo/ViewController.h; sourceTree = SOURCE_ROOT; };
+		5AECB17C1D1C18FF00CD8CB1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Demo/ViewController.m; sourceTree = SOURCE_ROOT; };
+		5AECB1801D1C191500CD8CB1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Demo/main.m; sourceTree = SOURCE_ROOT; };
+		5AECB1831D1C193100CD8CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Demo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		5AECB1851D1C193100CD8CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Demo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		5AECB1891D1C196800CD8CB1 /* FTPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPickerView.h; sourceTree = "<group>"; };
+		5AECB18A1D1C196800CD8CB1 /* FTPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPickerView.m; sourceTree = "<group>"; };
+		5AECB18C1D1C198600CD8CB1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +105,15 @@
 		5A0FF4011C10191A00D584D3 /* FTPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				5A0FF4051C10191A00D584D3 /* AppDelegate.h */,
-				5A0FF4061C10191A00D584D3 /* AppDelegate.m */,
-				5A0FF4081C10191A00D584D3 /* ViewController.h */,
-				5A0FF4091C10191A00D584D3 /* ViewController.m */,
-				5AA10B721C214B4B001D19AE /* FTPickerView */,
-				5A0FF40B1C10191A00D584D3 /* Main.storyboard */,
-				5A0FF40E1C10191A00D584D3 /* Assets.xcassets */,
-				5A0FF4101C10191A00D584D3 /* LaunchScreen.storyboard */,
-				5A0FF4131C10191A00D584D3 /* Info.plist */,
+				5AECB1781D1C18FF00CD8CB1 /* AppDelegate.h */,
+				5AECB1791D1C18FF00CD8CB1 /* AppDelegate.m */,
+				5AECB17B1D1C18FF00CD8CB1 /* ViewController.h */,
+				5AECB17C1D1C18FF00CD8CB1 /* ViewController.m */,
+				5AECB1881D1C196800CD8CB1 /* FTPickerView */,
+				5AECB1841D1C193100CD8CB1 /* Main.storyboard */,
+				5AECB17A1D1C18FF00CD8CB1 /* Assets.xcassets */,
+				5AECB1821D1C193100CD8CB1 /* LaunchScreen.storyboard */,
+				5AECB18C1D1C198600CD8CB1 /* Info.plist */,
 				5A0FF4021C10191A00D584D3 /* Supporting Files */,
 			);
 			path = FTPickerView;
@@ -121,7 +122,7 @@
 		5A0FF4021C10191A00D584D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A0FF4031C10191A00D584D3 /* main.m */,
+				5AECB1801D1C191500CD8CB1 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,13 +145,13 @@
 			path = FTPickerViewUITests;
 			sourceTree = "<group>";
 		};
-		5AA10B721C214B4B001D19AE /* FTPickerView */ = {
+		5AECB1881D1C196800CD8CB1 /* FTPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				5AA10B731C214B4B001D19AE /* FTPickerView.h */,
-				5AA10B741C214B4B001D19AE /* FTPickerView.m */,
+				5AECB1891D1C196800CD8CB1 /* FTPickerView.h */,
+				5AECB18A1D1C196800CD8CB1 /* FTPickerView.m */,
 			);
-			path = FTPickerView;
+			name = FTPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +221,6 @@
 				TargetAttributes = {
 					5A0FF3FE1C10191A00D584D3 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = E83AC9WR2F;
 					};
 					5A0FF4171C10191A00D584D3 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -257,9 +257,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0FF4121C10191A00D584D3 /* LaunchScreen.storyboard in Resources */,
-				5A0FF40F1C10191A00D584D3 /* Assets.xcassets in Resources */,
-				5A0FF40D1C10191A00D584D3 /* Main.storyboard in Resources */,
+				5AECB18D1D1C198600CD8CB1 /* Info.plist in Resources */,
+				5AECB1871D1C193100CD8CB1 /* Main.storyboard in Resources */,
+				5AECB17E1D1C18FF00CD8CB1 /* Assets.xcassets in Resources */,
+				5AECB1861D1C193100CD8CB1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AA10B751C214B4B001D19AE /* FTPickerView.m in Sources */,
-				5A0FF40A1C10191A00D584D3 /* ViewController.m in Sources */,
-				5A0FF4071C10191A00D584D3 /* AppDelegate.m in Sources */,
-				5A0FF4041C10191A00D584D3 /* main.m in Sources */,
+				5AECB18B1D1C196800CD8CB1 /* FTPickerView.m in Sources */,
+				5AECB17F1D1C18FF00CD8CB1 /* ViewController.m in Sources */,
+				5AECB1811D1C191500CD8CB1 /* main.m in Sources */,
+				5AECB17D1D1C18FF00CD8CB1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,20 +324,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5A0FF40B1C10191A00D584D3 /* Main.storyboard */ = {
+		5AECB1821D1C193100CD8CB1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5A0FF40C1C10191A00D584D3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5A0FF4101C10191A00D584D3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A0FF4111C10191A00D584D3 /* Base */,
+				5AECB1831D1C193100CD8CB1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5AECB1841D1C193100CD8CB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AECB1851D1C193100CD8CB1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -429,6 +430,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FTPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPickerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +445,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FTPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPickerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

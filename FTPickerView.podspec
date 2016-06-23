@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FTPickerView"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "A simple UIPickerView/UIDatePicker wapper."
   s.description  = <<-DESC
           A UIPickerView/UIDatePicker wapper which is maybe the easiest one to use. Using singleton and block callbacks.
@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.screenshots  = "https://raw.githubusercontent.com/liufengting/FTPickerView/master/ImageAssets/SimplePicker.png","https://raw.githubusercontent.com/liufengting/FTPickerView/master/ImageAssets/DatePicker.png"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/liufengting/FTPickerView.git", :tag => "0.1.1" }
-  s.source_files  = "FTPickerView", "FTPickerView/FTPickerView/*.{h,m}"
+  s.source       = { :git => "https://github.com/liufengting/FTPickerView.git", :tag => "#{s.version}" }
+  s.source_files  = "FTPickerView", "FTPickerView/*.{h,m}"
   s.requires_arc = true
 
 end
