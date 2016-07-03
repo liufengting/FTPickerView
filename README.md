@@ -6,9 +6,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/liufengting/FTPickerView.svg)](https://github.com/liufengting/FTPickerView/stargazers)
 
 
-A simple UIPickerView/UIDatePicker wapper.
+A simple UIPickerView/UIDatePicker wrapper.
 
 ## Features
+
 - singleton
 - block callbacks
 
@@ -28,32 +29,33 @@ A simple UIPickerView/UIDatePicker wapper.
 * Simple Picker 
 
 ```objective-c
+    //simple picker
+    [FTPickerView showWithTitle:@"Choose a step"
+                      nameArray:self.optionArrayOne
+                      doneBlock:^(NSInteger selectedIndex) {
+                          [sender setTitle:_optionArrayOne[selectedIndex] forState:UIControlStateNormal];
+                      } cancelBlock:^{
 
-//simple picker
-NSArry *nameArray = @[@"optionA",@"optionB",@"some other option"]
-[[FTPickerView sharedInstance]  showWithTitle:@"i am title"
-                                    nameArray:nameArray
-                                    doneBlock:^(NSInteger selectedIndex) {
-                                       		NSLog(@"the selected string is: %@",nameArray[selectedIndex]);
-                                    } cancelBlock:^{
-                                    }];
+                      }];
 ```
 
 * Date Picker 
 
 
 ```objective-c
-//date picker
-[[FTDatePickerView sharedInstance] showWithTitle:@"选择日期"
-                                      selectDate:[NSDate date]
-                                  datePickerMode:UIDatePickerModeDateAndTime
-                                       doneBlock:^(NSDate *selectedDate) {
-                                            NSDateFormatter *f = [[NSDateFormatter alloc]init];
-                                            [f setDateFormat:@"yyyy年MM月dd日 HH:mm:ss"];
-                                            NSLog(@"the selected date is: %@",[f stringFromDate:selectedDate]);
-                                  } cancelBlock:^{
-                                  }];
+    //date picker
+    [FTDatePickerView showWithTitle:@"Choose a date"
+                         selectDate:nil
+                     datePickerMode:UIDatePickerModeDateAndTime
+                          doneBlock:^(NSDate *selectedDate) {
+                              NSDateFormatter *dateFormate = [[NSDateFormatter alloc]init];
+                              [dateFormate setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+                              [sender setTitle:[dateFormate stringFromDate:selectedDate] forState:UIControlStateNormal];
+                          } cancelBlock:^{
+                              
+                          }];
 ```
+
 # Installation
 
 ## Manual

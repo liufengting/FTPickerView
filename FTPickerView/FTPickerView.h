@@ -19,21 +19,14 @@ typedef void (^ FTDatePickerCancelBlock )();
 
 @interface FTPickerTitleView : UIView
 
--(id)initWithFrame:(CGRect)frame withTitle:(NSString *)title;
-
 @end
 
 /**
  *  FTPickerView
  */
 
-@interface FTPickerView : NSObject <UIPickerViewDataSource,UIPickerViewDelegate>
-/**
- *  singlone
- *
- *  @return sharedInstance
- */
-+ (FTPickerView *)sharedInstance;
+@interface FTPickerView : NSObject 
+
 /**
  *  show method
  *
@@ -42,10 +35,14 @@ typedef void (^ FTDatePickerCancelBlock )();
  *  @param doneBlock   FTPickerDoneBlock
  *  @param cancelBlock FTPickerCancelBlock
  */
--(void)showWithTitle:(NSString *)title
-           nameArray:(NSArray *)nameArray
++(void)showWithTitle:(NSString *)title
+           nameArray:(NSArray<NSString *> *)nameArray
           doneBlock :(FTPickerDoneBlock)doneBlock
          cancelBlock:(FTPickerCancelBlock)cancelBlock;
+/**
+ *  dismiss
+ */
++(void)dismiss;
 
 @end
 
@@ -54,12 +51,7 @@ typedef void (^ FTDatePickerCancelBlock )();
  */
 
 @interface FTDatePickerView : UIView
-/**
- *  singlone
- *
- *  @return sharedInstance
- */
-+ (FTDatePickerView *)sharedInstance;
+
 /**
  *  show method
  *
@@ -67,7 +59,7 @@ typedef void (^ FTDatePickerCancelBlock )();
  *  @param doneBlock   FTDatePickerDoneBlock
  *  @param cancelBlock FTDatePickerCancelBlock
  */
--(void)showWithTitle:(NSString *)title
++(void)showWithTitle:(NSString *)title
           doneBlock :(FTDatePickerDoneBlock)doneBlock
          cancelBlock:(FTDatePickerCancelBlock)cancelBlock;
 /**
@@ -79,10 +71,14 @@ typedef void (^ FTDatePickerCancelBlock )();
  *  @param doneBlock      FTDatePickerDoneBlock
  *  @param cancelBlock    FTDatePickerCancelBlock
  */
--(void)showWithTitle:(NSString *)title
++(void)showWithTitle:(NSString *)title
           selectDate:(NSDate *)selectDate
       datePickerMode:(UIDatePickerMode )datePickerMode
           doneBlock :(FTDatePickerDoneBlock)doneBlock
          cancelBlock:(FTDatePickerCancelBlock)cancelBlock;
+/**
+ *  dismiss
+ */
++(void)dismiss;
 
 @end

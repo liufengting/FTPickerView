@@ -12,6 +12,7 @@
 #define KSCREEN_HEIGHT           [[UIScreen mainScreen] bounds].size.height
 #define PickerHeight             216
 #define BackgroundColor          [[UIColor blackColor] colorWithAlphaComponent:0.2]
+#define LineHeight               0.6
 
 #pragma mark -
 #pragma mark - FTPickerTitleView
@@ -21,6 +22,7 @@
 @property (nonatomic,strong)UIButton *cancelButton;
 @property (nonatomic,strong)UIButton *confirmButton;
 @property (nonatomic,strong)UILabel *titleLabel;
+@property (nonatomic,strong)UIView *bottomLine;
 
 @end
 
@@ -57,6 +59,10 @@
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.text = title;
         [self addSubview:_titleLabel];
+        
+        _bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height - LineHeight, self.bounds.size.width, LineHeight)];
+        _bottomLine.backgroundColor = [UIColor lightGrayColor];
+        [self addSubview:_bottomLine];
     }
     return self;
 }
@@ -66,7 +72,7 @@
 #pragma mark -
 #pragma mark - FTPickerView
 
-@interface FTPickerView()
+@interface FTPickerView() <UIPickerViewDataSource,UIPickerViewDelegate>
 
 @property (nonatomic,strong)UIView *backgroundView;
 @property (nonatomic,strong)UIPickerView *pickerView;
@@ -82,7 +88,7 @@
 
 @implementation FTPickerView
 
-#pragma mark - sharedInstance
+#pragma mark - public methods
 
 + (FTPickerView *)sharedInstance
 {
@@ -91,9 +97,17 @@
     dispatch_once(&once, ^{ sharedView = [[FTPickerView alloc] init]; });
     return sharedView;
 }
++(void)showWithTitle:(NSString *)title nameArray:(NSArray<NSString *> *)nameArray  doneBlock :(FTPickerDoneBlock)doneBlock cancelBlock:(FTPickerCancelBlock)cancelBlock
+{
+    [[self sharedInstance] showWithTitle:title nameArray:nameArray doneBlock:doneBlock cancelBlock:cancelBlock];
+}
++(void)dismiss
+{
+    [[self sharedInstance] onCancel];
+}
 
-
--(void)showWithTitle:(NSString *)title nameArray:(NSArray *)nameArray  doneBlock :(FTPickerDoneBlock)doneBlock cancelBlock:(FTPickerCancelBlock)cancelBlock
+#pragma mark - private methods
+-(void)showWithTitle:(NSString *)title nameArray:(NSArray<NSString *> *)nameArray  doneBlock :(FTPickerDoneBlock)doneBlock cancelBlock:(FTPickerCancelBlock)cancelBlock
 {
     _titleArray = nameArray;
     _doneBlock = doneBlock;
@@ -235,7 +249,7 @@
 
 @implementation FTDatePickerView
 
-#pragma mark - sharedInstance
+#pragma mark - public methods
 
 + (FTDatePickerView *)sharedInstance
 {
@@ -244,6 +258,24 @@
     dispatch_once(&once, ^{ sharedView = [[FTDatePickerView alloc] init]; });
     return sharedView;
 }
+
++(void)showWithTitle:(NSString *)title doneBlock :(FTDatePickerDoneBlock)doneBlock cancelBlock:(FTDatePickerCancelBlock)cancelBlock
+{
+    [[self sharedInstance] showWithTitle:title selectDate:nil datePickerMode:UIDatePickerModeDateAndTime doneBlock:doneBlock cancelBlock:cancelBlock];
+    
+}
+
++(void)showWithTitle:(NSString *)title selectDate:(NSDate *)selectDate datePickerMode:(UIDatePickerMode )datePickerMode doneBlock :(FTDatePickerDoneBlock)doneBlock cancelBlock:(FTDatePickerCancelBlock)cancelBlock
+{
+    [[self sharedInstance] showWithTitle:title selectDate:selectDate datePickerMode:datePickerMode doneBlock:doneBlock cancelBlock:cancelBlock];
+}
+
++(void)dismiss
+{
+    [[self sharedInstance] onCancel];
+}
+
+#pragma mark - private methods
 -(void)showWithTitle:(NSString *)title doneBlock :(FTDatePickerDoneBlock)doneBlock cancelBlock:(FTDatePickerCancelBlock)cancelBlock
 {
     [self showWithTitle:title selectDate:nil datePickerMode:UIDatePickerModeDateAndTime doneBlock:doneBlock cancelBlock:cancelBlock];
