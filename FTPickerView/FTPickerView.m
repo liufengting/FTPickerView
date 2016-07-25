@@ -142,6 +142,7 @@
         [_pickerView selectRow:0 inComponent:0 animated:YES];
         [self open];
     }else{
+        [[UIApplication sharedApplication].keyWindow addSubview:_backgroundView];
         _titleView.titleLabel.text = title;
         [_pickerView reloadAllComponents];
         [self open];
@@ -317,6 +318,8 @@
         
         [self open];
     }else{
+        [[UIApplication sharedApplication].keyWindow addSubview:_backgroundView];
+
         _titleView.titleLabel.text = title;
         _datePicker.datePickerMode = datePickerMode;
         if (selectDate) {
