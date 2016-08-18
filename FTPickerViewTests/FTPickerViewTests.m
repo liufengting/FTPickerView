@@ -2,7 +2,7 @@
 //  FTPickerViewTests.m
 //  FTPickerViewTests
 //
-//  Created by liufengting on 15/12/3.
+//  Created by liufengting https://github.com/liufengting on 15/12/3.
 //  Copyright © 2015年 liufengting. All rights reserved.
 //
 
