@@ -10,9 +10,9 @@
 
 #define KSCREEN_WIDTH            [[UIScreen mainScreen] bounds].size.width
 #define KSCREEN_HEIGHT           [[UIScreen mainScreen] bounds].size.height
-#define PickerHeight             216
-#define BackgroundColor          [[UIColor blackColor] colorWithAlphaComponent:0.2]
-#define LineHeight               0.6
+#define PickerHeight             216.f
+#define BackgroundColor          [[UIColor blackColor] colorWithAlphaComponent:0.2f]
+#define LineHeight               0.6f
 
 #pragma mark -
 #pragma mark - FTPickerTitleView

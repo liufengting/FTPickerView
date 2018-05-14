@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FTPickerView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A simple UIPickerView/UIDatePicker wapper."
   s.description  = <<-DESC
           A UIPickerView/UIDatePicker wrapper which is maybe the easiest one to use. Using singleton and block callbacks.
