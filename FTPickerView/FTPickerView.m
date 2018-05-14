@@ -176,12 +176,12 @@
 {
     [UIView animateWithDuration:0.3
                      animations:^{
-                         [_backgroundView setFrame:CGRectMake(0, 0, KSCREEN_WIDTH, KSCREEN_HEIGHT)];
+                         [self.backgroundView setFrame:CGRectMake(0, 0, KSCREEN_WIDTH, KSCREEN_HEIGHT)];
                      }
                      completion:^(BOOL finished) {
                          [UIView animateWithDuration:0.1
                                           animations:^{
-                                              _backgroundView.backgroundColor = BackgroundColor;
+                                              self.backgroundView.backgroundColor = BackgroundColor;
                                           }];
                      }];
 }
@@ -190,12 +190,12 @@
 {
     [UIView animateWithDuration:0.1
                      animations:^{
-                         _backgroundView.backgroundColor = [UIColor clearColor];
+                         self.backgroundView.backgroundColor = [UIColor clearColor];
                      }
                      completion:^(BOOL finished) {
                          [UIView animateWithDuration:0.3
                                           animations:^{
-                                              [_backgroundView setFrame:CGRectMake(0, KSCREEN_HEIGHT, KSCREEN_WIDTH, KSCREEN_HEIGHT)];
+                                              [self.backgroundView setFrame:CGRectMake(0, KSCREEN_HEIGHT, KSCREEN_WIDTH, KSCREEN_HEIGHT)];
                                           }];
                      }];
 }
@@ -352,12 +352,12 @@
 {
     [UIView animateWithDuration:0.3
                      animations:^{
-                         [_backgroundView setFrame:CGRectMake(0, 0, KSCREEN_WIDTH, KSCREEN_HEIGHT)];
+                         [self.backgroundView setFrame:CGRectMake(0, 0, KSCREEN_WIDTH, KSCREEN_HEIGHT)];
                      }
                      completion:^(BOOL finished) {
                          [UIView animateWithDuration:0.1
                                           animations:^{
-                                              _backgroundView.backgroundColor = BackgroundColor;
+                                              self.backgroundView.backgroundColor = BackgroundColor;
                                           }];
                      }];
 }
@@ -365,15 +365,15 @@
 {
     [UIView animateWithDuration:0.1
                      animations:^{
-                         _backgroundView.backgroundColor = [UIColor clearColor];
+                         self.backgroundView.backgroundColor = [UIColor clearColor];
                      }
                      completion:^(BOOL finished) {
                          [UIView animateWithDuration:0.3
                                           animations:^{
-                                              [_backgroundView setFrame:CGRectMake(0, KSCREEN_HEIGHT, KSCREEN_WIDTH, KSCREEN_HEIGHT)];
+                                              [self.backgroundView setFrame:CGRectMake(0, KSCREEN_HEIGHT, KSCREEN_WIDTH, KSCREEN_HEIGHT)];
                                           }completion:^(BOOL finished) {
-                                              if (_selectedDate) {
-                                                  self.doneBlock(_selectedDate);
+                                              if (self.selectedDate) {
+                                                  self.doneBlock(self.selectedDate);
                                               }else{
                                                   self.cancelBlock();
                                               }

@@ -37,7 +37,7 @@
     [FTPickerView showWithTitle:@"Choose a step"
                       nameArray:self.optionArrayOne
                       doneBlock:^(NSInteger selectedIndex) {
-                          [sender setTitle:_optionArrayOne[selectedIndex] forState:UIControlStateNormal];
+                          [sender setTitle:self.optionArrayOne[selectedIndex] forState:UIControlStateNormal];
                       } cancelBlock:^{
 
                       }];

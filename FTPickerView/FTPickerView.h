@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 typedef void (^ FTPickerDoneBlock )(NSInteger);
-typedef void (^ FTPickerCancelBlock )();
+typedef void (^ FTPickerCancelBlock )(void);
 typedef void (^ FTDatePickerDoneBlock )(NSDate *);
-typedef void (^ FTDatePickerCancelBlock )();
+typedef void (^ FTDatePickerCancelBlock )(void);
 
 /**
  *  FTPickerTitleView
